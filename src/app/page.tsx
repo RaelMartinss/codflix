@@ -1,13 +1,13 @@
-import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
+import Header from './components/Header'
 
 const inter = Inter({ subsets: ['latin']})
 
 export default function Home() {
   return (
     <div className='bg-gradient-to-b relative h-screen overflow-hidden lg:h-[140vh]'>
-      {/* <Head> */}
+      <Header /> 
       <main className="relative pb-24 pl-4 lg:pl-16">
         <div className='flex flex-col space-y-2 py-16 md:space-y-4 lg:h-[65vh] lg:justify-end lg:pb-12'>
         <div className='absolute left-0 top-0 -z-10 flex h-[95vh] w-screen flex-col'>
@@ -36,7 +36,6 @@ export default function Home() {
           </button>
         </div>
       </main>
-      {/* </Head> */}
     </div>
   )
 }
