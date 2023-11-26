@@ -13,7 +13,7 @@ export default function Home() {
         <div className='absolute left-0 top-0 -z-10 flex h-[95vh] w-screen flex-col'>
           <Image
               src='/the.png' 
-              alt='logo'
+              alt='background'
               fill={true}
               className='h-[65vh] object-cover object-top lg:h-[95vh]'
               />
