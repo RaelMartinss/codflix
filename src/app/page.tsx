@@ -45,12 +45,12 @@ export default function Home() {
                 <div key={index} className='group relative h-28 min-w-[200px] transform bg-gradient-to-t from-transparent
                 to-black transition duration-200 ease-in hover:z-50 hover:scale-110 md:h-40 md:min-w-[300px] lg:h-52 lg:min-w-[400px]
                 '>
-                  {/* <Image
+                  <Image
                     src={`/item_${index}.png`}
                     fill={true}
                     alt='MAID'
                     className='rounded'
-                  /> */}
+                  />
                 </div>
               ))}
           </div>
