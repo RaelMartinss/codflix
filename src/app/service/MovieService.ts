@@ -17,11 +17,15 @@ export const getMovieByGenres = async (genre: string, options?: RequestOptions):
     );
 };
 
-export const searchMovies = async (title: string, genre: string, options?: RequestOptions): Promise<Movies> => {
-    return apiRequest(`movies`, {
+export const searchMovies = async (
+    title: string = '', genre: string = '', options: RequestOptions = { _limit: 100 }
+    ): Promise<Movies> => {
+    return apiRequest(
+        `movies`, 
+        {
         title_like: encodeURIComponent(title),
         genre_like: encodeURIComponent(genre),
-    },
+        },
         options
     );
 };

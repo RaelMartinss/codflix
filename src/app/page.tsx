@@ -1,7 +1,7 @@
 import Header from './components/Header';
 import { MovieRow } from './components/MovieRow';
 import { Banner } from './components/Banner';
-import { getFeaturedMovie, getMovieByGenres } from './auth/server/MovieService';
+import { getFeaturedMovie, getMovieByGenres } from './service/MovieService';
 
 
 export default async function Home() {
